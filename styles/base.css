@@ -1,32 +1,38 @@
 header {
     display: flex;
     align-items: center;
-    background-color: #f0f0f0;
-    /* Change this to your desired header background color */
+    background-color: #92b6b1;
+    justify-content: space-between;
     padding: 10px;
 }
 
-header img {
-    margin-right: 20px;
-}
+#profilePic {
+border-radius: 15%;
 
+}
 nav {
-    background-color: #e0e0e0;
-    /* Change this to your desired nav background color */
-    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #788AA3;
+    padding: 3vw;
+    
+
 }
 
-nav ul {
-    list-style-type: none;
-    padding: 0;
-}
 
-nav ul li {
-    margin: 5px 0;
-}
-
-nav ul li a {
+nav a {
+    padding: 5px;
     text-decoration: none;
-    color: #000;
-    /* Change this to your desired link color */
+    color: black;
+    
+}
+
+nav a:hover {
+    /* for hovering on nav elements */
+}
+
+main h2 {
+    text-decoration: underline;
+    text-align: center;
 }
