@@ -1,38 +1,48 @@
-header {
-    display: flex;
-    align-items: center;
-    background-color: #92b6b1;
-    justify-content: space-between;
-    padding: 10px;
-}
+    header {
+        display: flex;
+        align-items: center;
+        background-color: #92b6b1;
+        justify-content: space-between;
+        padding: 10px;
+    }
 
-#profilePic {
-border-radius: 15%;
+    #profilePic {
+    border-radius: 15%;
 
-}
-nav {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    background-color: #788AA3;
-    padding: 3vw;
+    }
+
+    nav {
+        display: none;
+    }
+
+
+    @media (min-width: 760px) {
+            
+        
+        nav {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            background-color: #788AA3;
+            padding: 3vw;
+        }
     
 
-}
+        nav a {
+            padding: 5px;
+            text-decoration: none;
+            color: black;
+            
+        }
 
+        nav a:hover {
+            /* for hovering on nav elements */
+            color: white;
+        }
 
-nav a {
-    padding: 5px;
-    text-decoration: none;
-    color: black;
-    
-}
+    }
 
-nav a:hover {
-    /* for hovering on nav elements */
-}
-
-main h2 {
-    text-decoration: underline;
-    text-align: center;
-}
+    main h2 {
+        text-decoration: underline;
+        text-align: center;
+    }
