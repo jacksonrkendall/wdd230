@@ -7,14 +7,16 @@
     <title>Jackson Kendall - WDD 230 - Web Frontend Development</title>
     <meta name="description" content="WDD 230 - Web Frontend Development course assignment portal by Jackson Kendall.">
     <meta name="author" content="Jackson Kendall">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="styles/base.css">
-    <!-- <link rel="stylesheet" type="text/css" href="styles/larger.css"> -->
-    <script src="scripts/scripts.js"></script>
+    <!-- <link rel="stylesheet" type="text/css" href="styles/larger.css">  -->
 </head>
 
 <body>
     <header>
-        <img id="profilePic" src="images/profile pic.jpg" width="100px" alt="Profile Image">
+        <img id="profilePic" src="images/pfpfinal.jpg" width="100px" alt="Profile Image">
         <h1>Jackson Kendall</h1>
         <button onclick="document.getElementById(nav)">≡</button>
     </header>
@@ -27,7 +29,7 @@
     </nav>
     <main>
         <h2>WDD 230: Web Frontend Development</h2>
-        <section class="card">
+        <section id="learning" class="card">
             <h3>Learning Activities</h3>
             <ul>
                 <li><a href="week2.html"></a></li>
@@ -36,7 +38,7 @@
                 <li><a href="#"></a></li>
             </ul>
         </section>
-        <section class="card">
+        <section id="info" class="card">
             <h3>Information</h3>
             <p>Weather: <!-- Placeholder for weather information --></p>
             <p>Number of visits: <!-- Placeholder for visit count --></p>
@@ -47,6 +49,7 @@
         <p id="lastModified"></p>
     </footer>
 
+    <script src="scripts/getdates.js"></script>
 </body>
 
 </html>

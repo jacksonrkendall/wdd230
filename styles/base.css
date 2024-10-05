@@ -1,48 +1,78 @@
     header {
         display: flex;
         align-items: center;
-        background-color: #92b6b1;
-        justify-content: space-between;
-        padding: 10px;
+        background-color: #81B29A;
+        justify-content: space-evenly;
+        padding: 3vw;        
+        border-radius: 10px;
+        }
+
+    header h1 {
+        color: white
     }
 
+    html {
+        background-color: #f4f1de;
+        font-family: 'quicksand', sans-serif;
+    }
+
+    .card {
+        margin: 3vw;
+        border-radius: 10px;
+        padding: 3vw;    
+        border: 1px;
+        border-style: solid;
+        border-color: black;
+        }
+
+
     #profilePic {
-    border-radius: 15%;
+    border-radius: 10%;
 
     }
 
     nav {
         display: none;
-    }
-
-
-    @media (min-width: 760px) {
-            
+        border-radius: 10px;
+        margin: 1vw;
+    }            
         
-        nav {
-            display: flex;
-            flex-direction: column;
-            text-align: center;
-            background-color: #788AA3;
-            padding: 3vw;
-        }
+    nav {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        background-color: #3D405B;
+        padding: 3vw;
+      }
     
 
-        nav a {
-            padding: 5px;
-            text-decoration: none;
-            color: black;
-            
+     nav a {
+        padding: 5px;
+        text-decoration: none;
+        color: White;      
+       }
+
+    nav a:hover {
+        /* for hovering on nav elements */
+        color: white;
         }
 
-        nav a:hover {
-            /* for hovering on nav elements */
-            color: white;
-        }
-
+    main {
+        max-width: 1500px;
+        margin: auto;
     }
-
     main h2 {
         text-decoration: underline;
         text-align: center;
+    }
+
+    #learning li {
+        display: none;
+    }
+
+    footer {
+        text-align: center;
+        background-color: #81B29A;
+        border-radius: 10px;
+        padding: 3vw;
     }
