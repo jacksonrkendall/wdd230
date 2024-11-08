@@ -1,14 +1,15 @@
     header {
         display: flex;
         align-items: center;
-        background-color: #81B29A;
+        background-color: #2D6A4F;
+        /* Darker teal for better contrast */
         justify-content: space-evenly;
-        padding: 3vw;        
+        padding: 3vw;
         border-radius: 10px;
-        }
+    }
 
     header h1 {
-        color: white
+        color: white;
     }
 
     html {
