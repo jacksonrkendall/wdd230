@@ -47,6 +47,20 @@
         { "url": "#", "title": "Lazy Loading" },
         { "url": "#", "title": "BOM Local Storage" }
       ]
+    },
+    {
+      "lesson": "08",
+      "links": [
+        { "url": "#", "title": "HTML Tables" },
+        { "url": "#", "title": "HTML Forms" }
+      ]
+    },
+    {
+      "lesson": "09",
+      "links": [
+        { "url": "#", "title": "JSON File" },
+        { "url": "#", "title": "The Fetch API" }
+      ]
     }
   ]
 }
