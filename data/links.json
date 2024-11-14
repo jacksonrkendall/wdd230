@@ -59,7 +59,7 @@
       "lesson": "09",
       "links": [
         { "url": "#", "title": "JSON File" },
-        { "url": "#", "title": "The Fetch API" }
+        { "url": "lesson09/prophets.html", "title": "The Fetch API" }
       ]
     }
   ]
