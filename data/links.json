@@ -1,0 +1,52 @@
+{
+  "lessons": [
+    {
+      "lesson": "01",
+      "links": [
+        { "url": "lesson01/holygrail.html", "title": "Holy Grail" },
+        { "url": "#", "title": "JS Pen" }
+      ]
+    },
+    {
+      "lesson": "02",
+      "links": [
+        { "url": "lesson02/media-query.html", "title": "Media Query" },
+        { "url": "lesson02/design.html", "title": "Design Principles" }
+      ]
+    },
+    {
+      "lesson": "03",
+      "links": [
+        { "url": "lesson03/css proof.png", "title": "Combinator Exercise" },
+        { "url": "https://codepen.io/jackson-kendall/pen/OJKNZdY", "title": "CSS Pseudo Elements" },
+        { "url": "#", "title": "Hamburger Menu" }
+      ]
+    },
+    {
+      "lesson": "04",
+      "links": [
+        { "url": "https://codepen.io/jackson-kendall/pen/WNVoBmN", "title": "Pseudo-Classes CodePen" }
+      ]
+    },
+    {
+      "lesson": "05",
+      "links": [
+        { "url": "#", "title": "DOM Manipulation" }
+      ]
+    },
+    {
+      "lesson": "06",
+      "links": [
+        { "url": "#", "title": "WebP Image" },
+        { "url": "#", "title": "Responsive Images" }
+      ]
+    },
+    {
+      "lesson": "07",
+      "links": [
+        { "url": "#", "title": "Lazy Loading" },
+        { "url": "#", "title": "BOM Local Storage" }
+      ]
+    }
+  ]
+}
