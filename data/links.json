@@ -17,9 +17,9 @@
     {
       "lesson": "03",
       "links": [
-        { "url": "lesson03/css proof.png", "title": "Combinator Exercise" },
+        { "url": "lesson03/css_proof.png", "title": "Combinator Exercise" },
         { "url": "https://codepen.io/jackson-kendall/pen/OJKNZdY", "title": "CSS Pseudo Elements" },
-        { "url": "#", "title": "Hamburger Menu" }
+        { "url": "https://codepen.io/jackson-kendall/pen/ExqMdQg", "title": "Hamburger Menu" }
       ]
     },
     {

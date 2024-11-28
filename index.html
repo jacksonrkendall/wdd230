@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,20 +13,18 @@
     <link rel="stylesheet" type="text/css" href="styles/larger.css">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
     <link rel="icon" href="favicon.ico">
-    <meta property="og:title" content="WDD230 Home Page" />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://www.gettyimages.com/detail/photo/drone-point-of-view-looking-up-the-eagle-river-royalty-free-image/1171802688" />
-    <meta property="og:url" content="https://jacksonrkendall.github.io/wdd230/" />
-
+    <meta property="og:title" content="WDD230 Home Page">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://www.gettyimages.com/detail/photo/drone-point-of-view-looking-up-the-eagle-river-royalty-free-image/1171802688">
+    <meta property="og:url" content="https://jacksonrkendall.github.io/wdd230/">
 </head>
-
 <body>
     <header>
         <img id="profilePic" src="images/pfpfinal.jpg" width="100px" alt="Website Author, Jackson Kendall">
         <h1>Jackson Kendall</h1>
-        <button onclick="document.getElementById(nav)">≡</button>
+        <button id="menu-toggle">≡</button>
     </header>
-    <nav>
+    <nav id="main-nav">
         <a href="#">Home</a>
         <a href="lesson03/chamber-site-plan.html">Site Plan</a>
         <a href="chamber/">Chamber</a>
@@ -36,22 +33,9 @@
     </nav>
     <main>
         <h2>WDD 230: Web Frontend Development</h2>
-        <!-- <section id="learning" class="card">
-            <h3>Learning Activities</h3>
-            <ul>
-                <li>01: <a href="lesson01/holygrail.html">Holy Grail</a> <span> | </span> <a href="#">JS Pen</a></li>
-                <li>02: <a href="lesson02/media-query.html">Media Query</a><span> | </span><a href="lesson02/design.html">Design Principles</a></li>
-                <li>03: <a href="lesson03/css proof.png">Combinator Exercise</a> <span> | </span> <a href="https://codepen.io/jackson-kendall/pen/OJKNZdY">CSS Pseudo Elements</a> <span> | </span><a href="#">Hamburger Menu</a></li>
-                <li>04: <a href="https://codepen.io/jackson-kendall/pen/WNVoBmN">Pseudo-Classes CodePen</a></li>
-                <li>05: <a href="#">DOM Manipulation</a></li>
-                <li>06: <a href="#">WebP Image</a> <span> | </span> <a href="#">Responsive Images</a></li>
-                <li>07: <a href="#">Lazy Loading</a> <span> | </span> <a href="#">BOM Local Storage</a></li>
-            </ul>
-        </section> -->
         <section id="learning" class="card">
             <h3>Learning Activities</h3>
             <ul id="lessons-list">
-                <!-- Dynamic content will be inserted here -->
             </ul>
         </section>
         <section id="info" class="card">
@@ -59,15 +43,19 @@
             <p>Weather: <!-- Placeholder for weather information --></p>
             <p>Number of visits: <!-- Placeholder for visit count --></p>
         </section>
+        <div id="map-container">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d146181.27559698586!2d-149.66227073175094!3d61.315813399374896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x56c88cc064294b89%3A0x8366249c4a18f5a7!2sEagle%20River%2C%20Anchorage%2C%20AK!5e1!3m2!1sen!2sus!4v1732562644660!5m2!1sen!2sus"
+                width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
     </main>
     <footer>
         <p>© <span id="currentYear"></span> Jackson Kendall, Rexburg, Idaho</p>
         <p id="lastModified"></p>
     </footer>
-
     <script src="scripts/getdates.js"></script>
     <script src="scripts/links.js"></script>
-
+    <script src="scripts/scripts.js"></script>
 </body>
-
 </html>

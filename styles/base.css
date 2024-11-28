@@ -45,11 +45,20 @@
     nav a {
         padding: 5px;
         text-decoration: none;
-        color: White;      
+        color: White;
+        position: relative;
     }
 
-    nav a:hover {
+    nav a::after {
+        content: '➡️';
+        position: absolute;
+        right: -15px;
         color: white;
+        font-size: 1rem;
+    }
+
+    nav a:hover::after {
+        color: #A8DADC;
     }
 
     li {
@@ -70,4 +79,30 @@
         background-color: #2D6A4F;
         padding: 3vw;
         color: white;
+    }
+
+    #menu-toggle {
+        display: none;
+        cursor: pointer;
+        font-size: 2rem;
+        background: none;
+        border: none;
+    }
+
+    @media (max-width: 599px) {
+        #menu-toggle {
+            display: block;
+        }
+
+        #main-nav {
+            display: none;
+        }
+
+        #main-nav.show {
+            display: block;
+        }
+
+        nav {
+            flex-direction: column;
+        }
     }
