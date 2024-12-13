@@ -1,108 +1,139 @@
-    header {
-        display: flex;
-        align-items: center;
-        background-color: #2D6A4F;
-        justify-content: space-evenly;
-        padding: 3vw;
-        border-radius: 10px;
-    }
-
-    header h1 {
-        color: white;
-        margin-left: 10px;
-    }
-
-    html {
-        background-color: #f4f1de;
-        font-family: 'quicksand', sans-serif;
-    }
-
-    .card {
-        margin: 3vw;
-        border-radius: 10px;
-        padding: 3vw;    
-        border: 1px;
-        border-style: solid;
-        border-color: black;
-    }
-
-
-    #profilePic {
+/* Header Styling */
+header {
+    display: flex;
+    align-items: center;
+    background-color: #2D6A4F;
+    justify-content: space-evenly;
+    padding: 3vw;
     border-radius: 10px;
-    }         
-        
+}
+
+header h1 {
+    color: white;
+    margin-left: 10px;
+}
+
+/* General Styling */
+html {
+    background-color: #f4f1de;
+    font-family: 'quicksand', sans-serif;
+}
+
+.card {
+    margin: 3vw;
+    border-radius: 10px;
+    padding: 3vw;
+    border: 1px solid black;
+}
+
+#profilePic {
+    border-radius: 10px;
+}
+
+/* Navigation Styling */
+nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #3D405B;
+    padding: 3vw;
+    border-radius: 10px;
+    margin: 1vw;
+}
+
+nav a {
+    padding: 5px;
+    text-decoration: none;
+    color: white;
+    position: relative;
+    padding-bottom: 5px;
+    /* Ensure space for the underline */
+}
+
+nav a::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 2px;
+    background-color: #A8DADC;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+nav a:hover::before {
+    transform: scaleX(1);
+}
+
+/* List Styling */
+li {
+    list-style-type: none;
+}
+
+/* Main Content Styling */
+main {
+    max-width: 1500px;
+    margin: auto;
+}
+
+main h2 {
+    text-decoration: underline;
+    text-align: center;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    background-color: #2D6A4F;
+    padding: 3vw;
+    color: white;
+}
+
+/* Menu Toggle Button Styling */
+#menu-toggle {
+    display: none;
+    cursor: pointer;
+    font-size: 2rem;
+    background: none;
+    border: none;
+}
+
+/* Responsive Design for Small Screens */
+@media (max-width: 599px) {
+    #menu-toggle {
+        display: block;
+    }
+
+    #main-nav {
+        display: none;
+    }
+
+    #main-nav.show {
+        display: block;
+    }
+
     nav {
-        display: flex;
         flex-direction: column;
-        text-align: center;
-        background-color: #3D405B;
-        padding: 3vw;
-        border-radius: 10px;
-        margin: 1vw;
     }
-    
+}
 
-    nav a {
-        padding: 5px;
-        text-decoration: none;
-        color: White;
-        position: relative;
-    }
-
-    nav a::after {
-        content: '➡️';
-        position: absolute;
-        right: -15px;
-        color: white;
-        font-size: 1rem;
-    }
-
-    nav a:hover::after {
-        color: #A8DADC;
-    }
-
-    li {
-        list-style-type: none;
+/* Responsive Design for Larger Screens */
+@media (min-width: 600px) {
+    nav {
+        flex-direction: row;
+        justify-content: center;
     }
 
     main {
-        max-width: 1500px;
-        margin: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+        gap: 1rem;
     }
+
     main h2 {
-        text-decoration: underline;
+        grid-column: span 2;
         text-align: center;
     }
-
-    footer {
-        text-align: center;
-        background-color: #2D6A4F;
-        padding: 3vw;
-        color: white;
-    }
-
-    #menu-toggle {
-        display: none;
-        cursor: pointer;
-        font-size: 2rem;
-        background: none;
-        border: none;
-    }
-
-    @media (max-width: 599px) {
-        #menu-toggle {
-            display: block;
-        }
-
-        #main-nav {
-            display: none;
-        }
-
-        #main-nav.show {
-            display: block;
-        }
-
-        nav {
-            flex-direction: column;
-        }
-    }
+}

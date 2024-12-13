@@ -4,6 +4,28 @@
         justify-content: center;
     }
 
+    nav a {
+        position: relative;
+        padding-bottom: 5px;
+        /* Ensure space for the underline */
+    }
+
+    nav a::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 2px;
+        background-color: #A8DADC;
+        transform: scaleX(0);
+        transition: transform 0.3s ease;
+    }
+
+    nav a:hover::before {
+        transform: scaleX(1);
+    }
+
     main {
         display: grid;
         grid-template-columns: 1fr 1fr;

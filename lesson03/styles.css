@@ -1,0 +1,35 @@
+body {
+    font-family: Georgia, serif;
+    background-color: #F1F1F1;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header,
+footer {
+    background-color: #003366;
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
+
+h1,
+h2 {
+    font-family: Arial, sans-serif;
+}
+
+section {
+    margin: 2em;
+}
+
+.color-sample {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 0.5em;
+}
+
+ul {
+    list-style-type: none;
+}
