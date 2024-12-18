@@ -31,7 +31,7 @@
     {
       "lesson": "05",
       "links": [
-        { "url": "#", "title": "DOM Manipulation" }
+        { "url": "lesson05/bom.html", "title": "BOM Top 10" }
       ]
     },
     {

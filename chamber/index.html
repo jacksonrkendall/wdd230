@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description"
+        content="Eagle River Chamber of Commerce - Promoting business through member services, economic and community development, and public policy.">
+    <meta name="author" content="Your Name">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eagle River Chamber of Commerce</title>
+    <link rel="icon" href="images/favicon-32x32.png">
+    <meta property="og:title" content="Eagle River Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/favicon-32x32.png">
+    <meta property="og:url" content="https://jacksonrkendall.github.io/wdd230/chamber/index.html">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css" media="screen and (min-width: 768px)">
+    <link rel="stylesheet" href="styles/larger.css" media="screen and (min-width: 1024px)">
+</head>
+
+<body>
+    <header>
+        <span>Eagle River</span>
+        <span>Chamber of</span>
+        <span>Commerce</span>
+        <nav>
+            <button id="menu-toggle" aria-label="Toggle menu">&#9776;</button>
+            <ul id="menu">
+                <li><a href="#site-name">Home</a></li>
+                <li><a href="#site-purpose">Purpose</a></li>
+                <li><a href="#scenarios">Scenarios</a></li>
+                <li><a href="#current-events">Current Events</a></li>
+                <li><a href="#weather">Weather</a></li>
+                <li><a href="#company-spotlights">Spotlights</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero call-to-action">
+            <div class="hero-image">
+                <a href="#" class="cta-button">Join the Chamber of Commerce</a>
+            </div>
+        </section>
+        <section id="site-name" class="content">
+            <h2>Site Name</h2>
+            <p><strong>Eagle River Chamber of Commerce</strong> - The name represents the city of Eagle River, Alaska,
+                where the chamber operates.</p>
+        </section>
+        <section id="site-purpose" class="content">
+            <h2>Site Purpose</h2>
+            <p>The website serves as a regional economic catalyst, leadership convener, and community champion. We
+                promote business through member services, economic and community development, and public policy that
+                balances economic prosperity.</p>
+        </section>
+        <section id="scenarios" class="card">
+            <h2>Scenarios</h2>
+            <ul>
+                <li>What events will the chamber be holding this month that promote business-to-business networking?
+                </li>
+                <li>Where can I find contact information for the chamber's board of directors?</li>
+                <li>What has been the population growth in the area?</li>
+            </ul>
+        </section>
+        <section id="cards">
+            <section id="current-events" class="card">
+                <h2>Current Events</h2>
+                <!-- Placeholder for current events -->
+            </section>
+            <section id="weather" class="card">
+                <h2>Weather</h2>
+                <!-- Placeholder for weather card -->
+            </section>
+            <section id="company-spotlights" class="card">
+                <h2>Member Spotlights</h2>
+                <div class="card">
+                    <h3>Business 1</h3>
+                    <p>Details about Business 1.</p>
+                </div>
+                <div class="card">
+                    <h3>Business 2</h3>
+                    <p>Details about Business 2.</p>
+                </div>
+                <div class="card">
+                    <h3>Business 3</h3>
+                    <p>Details about Business 3.</p>
+                </div>
+            </section>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Eagle River Chamber of Commerce</p>
+        <p>Jackson Kendall for WDD 230</p>
+        <p>Last modified: <span id="last-modified"></span></p>
+    </footer>
+    <script>
+        document.getElementById('last-modified').textContent = document.lastModified;
+
+        // Hamburger menu toggle functionality
+        const menuToggle = document.getElementById('menu-toggle');
+        const menu = document.getElementById('menu');
+
+        menuToggle.addEventListener('click', () => {
+            menu.classList.toggle('show');
+        });
+    </script>
+</body>
+
+</html>

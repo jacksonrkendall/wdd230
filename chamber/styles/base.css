@@ -1,22 +1,6 @@
-/* Header Styling */
-header {
-    display: flex;
-    align-items: center;
-    background-color: #2D6A4F;
-    justify-content: space-evenly;
-    padding: 3vw;
-    border-radius: 10px;
-}
-
-header h1 {
-    color: white;
-    margin-left: 10px;
-}
-
-/* General Styling */
-html {
-    background-color: #f4f1de;
-    font-family: 'quicksand', sans-serif;
+/* General styling for sections and cards */
+section {
+    width: 100%;
 }
 
 .card {
@@ -26,18 +10,29 @@ html {
     border: 1px solid black;
 }
 
-#profilePic {
-    border-radius: 10px;
+header,
+footer {
+    background-color: #003366;
+    color: white;
+    padding: 1em;
+    text-align: center;
 }
 
-/* Navigation Styling */
+header h1 {
+    color: white;
+    margin-left: 10px;
+}
+
+html {
+    background-color: #f4f1de;
+    font-family: 'quicksand', sans-serif;
+}
+
 nav {
     display: flex;
     flex-direction: column;
     text-align: center;
-    background-color: #3D405B;
     padding: 3vw;
-    border-radius: 10px;
     margin: 1vw;
 }
 
@@ -47,7 +42,6 @@ nav a {
     color: white;
     position: relative;
     padding-bottom: 5px;
-    /* Ensure space for the underline */
 }
 
 nav a::before {
@@ -66,15 +60,19 @@ nav a:hover::before {
     transform: scaleX(1);
 }
 
-/* List Styling */
 li {
     list-style-type: none;
 }
 
-/* Main Content Styling */
 main {
     max-width: 1500px;
     margin: auto;
+}
+
+#company-spotlights .card {
+    display: block;
+    width: 100%;
+    margin-bottom: 1rem;
 }
 
 main h2 {
@@ -82,15 +80,6 @@ main h2 {
     text-align: center;
 }
 
-/* Footer Styling */
-footer {
-    text-align: center;
-    background-color: #2D6A4F;
-    padding: 3vw;
-    color: white;
-}
-
-/* Menu Toggle Button Styling */
 #menu-toggle {
     display: none;
     cursor: pointer;
