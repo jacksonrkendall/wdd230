@@ -1,0 +1,119 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.logo {
+    font-size: 1.2em;
+}
+
+.social-media {
+    display: flex;
+    align-items: center;
+}
+
+.social-media img {
+    width: 20px;
+    margin: 0 5px;
+}
+
+.menu-icon {
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.nav {
+    display: none;
+}
+
+.nav.open {
+    display: flex;
+    flex-direction: column;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-grow: 1;
+}
+
+.hero {
+    position: relative;
+    text-align: center;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+.join-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 1em 2em;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.content-row,
+.member-spotlights {
+    padding: 1em;
+}
+
+.boxed {
+    border: 1px solid #ddd;
+    padding: 1em;
+    margin: 1em 0;
+}
+
+.member {
+    border: 1px solid #ddd;
+    padding: 1em;
+    margin: 1em 0;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    font-size: 0.8em;
+}
+
+footer a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+
+.dark-mode header,
+.dark-mode footer {
+    background-color: #1f1f1f;
+}
+
+.dark-mode .nav a {
+    color: lightgray;
+}

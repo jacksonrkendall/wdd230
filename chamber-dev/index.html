@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eagle River Chamber of Commerce</title>
+    <link rel="stylesheet" href="/chamber-dev/styles/base.css">
+    <link rel="stylesheet" href="/chamber-dev/styles/larger.css">
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            document.getElementById("last-modified").textContent = "Last Modified: " + new Date(document.lastModified).toLocaleDateString();
+            document.querySelector(".menu-icon").addEventListener("click", function () {
+                document.querySelector(".nav").classList.toggle("open");
+            });
+        });
+
+        function toggleDarkMode() {
+            document.body.classList.toggle("dark-mode");
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="logo">Eagle River Chamber of Commerce</div>
+        <div class="header-right">
+            <nav class="nav">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <div class="social-media">
+                <a href="https://www.facebook.com"><img src="/chamber-dev/images/fb.webp" alt="Facebook"></a>
+                <a href="https://www.instagram.com"><img src="/chamber-dev/images/ig.webp" alt="Instagram"></a>
+            </div>
+        </div>
+        <div class="menu-icon">☰</div>
+    </header>
+    <main>
+        <section class="hero">
+            <img src="/chamber-dev/images/eagleriverhero.png" alt="Eagle River Hero Image">
+            <button class="join-button">Join the Chamber</button>
+        </section>
+        <section class="content-row">
+            <section class="boxed events">
+                <h2>Events</h2>
+                <div class="event">
+                    <h3>Now Opening: Little Dipper Eagle River</h3>
+                    <p>Come get a free mini scoop of homestyle ice cream this Friday at 10AM!</p>
+                    <a href="#">more info ...</a>
+                </div>
+            </section>
+            <section class="boxed weather">
+                <h2>Weather</h2>
+                <p>Temperature: 33°C</p>
+                <p>Condition: Partly Cloudy</p>
+                <p>Humidity: 35%</p>
+                <p>Wind Chill: N/A</p>
+            </section>
+        </section>
+        <section class="member-spotlights">
+            <h2>Member Spotlights</h2>
+            <div class="members-row">
+                <div class="member">
+                    <h3>Kendall Toyota</h3>
+                    <img src="/chamber-dev/images/kendall-toyota-thumb.jpg" alt="Kendall Toyota">
+                    <p>Slogan: Cars! We've got 'em!</p>
+                    <p>Email: cars@kendalltoyota.com</p>
+                    <p>Phone: +1-907-999-9999</p>
+                    <a href="#">Website</a>
+                </div>
+                <div class="member">
+                    <h3>Carl's Jr.</h3>
+                    <img src="/chamber-dev/images/carls-jr-thumb.jpg" alt="Carl's Jr.">
+                    <p>Description: Great food at inexpensive cost!</p>
+                    <p>Located on Old Glenn Hwy</p>
+                    <p>Phone: +1-907-531-8517</p>
+                    <a href="#">Website</a>
+                </div>
+                <div class="member">
+                    <h3>Three Bears Eagle River</h3>
+                    <img src="/chamber-dev/images/three-bears-thumb.jpg" alt="Three Bears Eagle River">
+                    <p>Description: Our newest location in Eagle River!</p>
+                    <p>17320 Northgate Dr, Eagle River, AK 99577</p>
+                    <p>Phone: +1-907-694-3377</p>
+                    <a href="https://www.threebearsalaska.com">Website</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Eagle River. All rights reserved.</p>
+        <p>Contact: info@scan-a-plan.com | +1-208-346-3398</p>
+        <p>Parkgate, 11723 Old Glenn Hwy, Eagle River, AK 99577 | <a href="#">Location Map</a></p>
+        <p>Jackson Kendall, WDD 230 Project</p>
+        <p id="last-modified">Last Modified: </p>
+        <div class="dark-mode-toggle">
+            <button onclick="toggleDarkMode()">
+                <img src="/chamber-dev/images/sunglasses-icon.png" alt="Toggle Dark Mode">
+            </button>
+        </div>
+    </footer>
+</body>
+
+</html>
