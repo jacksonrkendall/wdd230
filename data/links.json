@@ -37,7 +37,7 @@
     {
       "lesson": "06",
       "links": [
-        { "url": "#", "title": "WebP Image" },
+        { "url": "lesson06/webp.webp", "title": "WebP Image" },
         { "url": "#", "title": "Responsive Images" }
       ]
     },

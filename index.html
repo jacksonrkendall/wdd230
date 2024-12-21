@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,9 +16,11 @@
     <link rel="icon" href="favicon.ico">
     <meta property="og:title" content="WDD230 Home Page">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="https://www.gettyimages.com/detail/photo/drone-point-of-view-looking-up-the-eagle-river-royalty-free-image/1171802688">
+    <meta property="og:image"
+        content="https://www.gettyimages.com/detail/photo/drone-point-of-view-looking-up-the-eagle-river-royalty-free-image/1171802688">
     <meta property="og:url" content="https://jacksonrkendall.github.io/wdd230/">
 </head>
+
 <body>
     <header>
         <img id="profilePic" src="images/pfpfinal.jpg" width="100px" alt="Website Author, Jackson Kendall">
@@ -29,9 +32,16 @@
         <a href="lesson03/chamber-site-plan.html">Site Plan</a>
         <a href="chamber/index.html">Chamber</a>
         <a href="https://www.byui.edu" target="_blank">BYU-Idaho</a>
-        <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/moro/10?lang=eng&id=p4#p4" target="_blank">Scripture</a>
+        <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/moro/10?lang=eng&id=p4#p4"
+            target="_blank">Scripture</a>
     </nav>
     <main>
+        <picture>
+            <source srcset="images/monticello-mobile.webp" media="(max-width: 600px)">
+            <source srcset="images/monticello-desktop.webp" media="(min-width: 601px)">
+            <img src="images/monticello-desktop.webp" alt="Monticello Temple" style="width: 100%; height: auto;">
+        </picture>
+        <div class="overlay">Monticello Temple</div>
         <h2>WDD 230: Web Frontend Development</h2>
         <section id="cards">
             <section id="learning" class="card">
@@ -60,4 +70,5 @@
     <script src="scripts/links.js"></script>
     <script src="scripts/scripts.js"></script>
 </body>
+
 </html>

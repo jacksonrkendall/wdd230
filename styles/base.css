@@ -75,6 +75,8 @@ li {
 main {
     max-width: 1500px;
     margin: auto;
+    position: relative;
+    /* Add this to allow absolute positioning within main */
 }
 
 main h2 {
@@ -97,4 +99,14 @@ footer {
     font-size: 2rem;
     background: none;
     border: none;
+}
+
+.overlay {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px 10px;
+    white-space: nowrap;
 }

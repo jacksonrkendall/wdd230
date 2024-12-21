@@ -1,0 +1,14 @@
+{
+  "scooters": [
+    { "type": "Honda Metropolitan", "persons": 1, "half_day": 20, "full_day": 30, "walk_in_half_day": 25, "walk_in_full_day": 35, "image": "images/scooters/scooter1.webp" },
+    { "type": "Honda Dio", "persons": 2, "half_day": 30, "full_day": 40, "walk_in_half_day": 35, "walk_in_full_day": 45, "image": "images/scooters/scooter2.webp" },
+    { "type": "Honda PCX150", "persons": 2, "half_day": 40, "full_day": 50, "walk_in_half_day": 45, "walk_in_full_day": 55, "image": "images/scooters/scooter3.webp" }
+  ],
+  "atvs": [
+    { "type": "Honda Pioneer 1000", "persons": 4, "half_day": 50, "full_day": 70, "walk_in_half_day": 60, "walk_in_full_day": 80, "image": "images/atvs/atv1.webp" }
+  ],
+  "jeeps": [
+    { "type": "Jeep Wrangler - 4 door", "persons": 5, "half_day": 70, "full_day": 100, "walk_in_half_day": 85, "walk_in_full_day": 125, "image": "images/jeeps/jeep1.webp" },
+    { "type": "Jeep Wrangler - 2 door", "persons": 4, "half_day": 60, "full_day": 85, "walk_in_half_day": 70, "walk_in_full_day": 90, "image": "images/jeeps/jeep2.webp" }
+  ]
+}

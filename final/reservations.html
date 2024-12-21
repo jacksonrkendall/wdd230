@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scoots - Reservations</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="scripts/reservations.js" defer></script>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="rentals.html">Rental Prices</a></li>
+            <li><a href="reservations.html">Reservations</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <h1>Make a Reservation</h1>
+
+    <section>
+        <h2>Rental Agreement Information</h2>
+        <ul>
+            <li>A $50 security deposit is required to confirm reservations.</li>
+            <li>A valid driver's license is required at the time of rental.</li>
+            <li>No one under the age of 12 is allowed to ride on the scooters.</li>
+            <li>Fuel charge is not included.</li>
+            <li>Unlimited mileage.</li>
+            <li>Liability insurance is included.</li>
+            <li>Damage insurance is available for purchase.</li>
+            <li>Free delivery to Cozumel hotels or Airbnbs for 2+ day rentals.</li>
+            <li>Payment via Google Pay, Apple Pay, cash, credit card, debit card, or Venmo.</li>
+            <li>Rentals may be returned to either physical location.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Reservation Form</h2>
+        <form id="reservation-form">
+            <label for="rental-date">Rental Date:</label>
+            <input type="date" id="rental-date" name="rental-date" required>
+
+            <label for="rental-period">Rental Period:</label>
+            <select id="rental-period" name="rental-period" required>
+                <option value="half-day">Half Day</option>
+                <option value="full-day">Full Day</option>
+            </select>
+
+            <label for="rental-type">Rental Type:</label>
+            <select id="rental-type" name="rental-type" required>
+                <option value="scooter">Scooter</option>
+                <option value="atv">ATV</option>
+                <option value="jeep">Jeep</option>
+            </select>
+
+            <label for="rental-number">Number of Rentals:</label>
+            <input type="number" id="rental-number" name="rental-number" min="1" max="10" required>
+
+            <label for="phone-number">Phone Number:</label>
+            <input type="tel" id="phone-number" name="phone-number" required>
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="home-state">Home State or Country:</label>
+            <input type="text" id="home-state" name="home-state" required>
+
+            <label for="cruise-line">Cruise Line (if applicable):</label>
+            <input type="text" id="cruise-line" name="cruise-line">
+
+            <label for="special-requests">Special Accommodations/Comments:</label>
+            <textarea id="special-requests" name="special-requests"></textarea>
+
+            <button type="submit">Submit Reservation</button>
+        </form>
+    </section>
+</body>
+
+</html>

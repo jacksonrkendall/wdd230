@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scoots - Contact Us</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="scripts/contact.js" defer></script>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="rentals.html">Rental Prices</a></li>
+            <li><a href="reservations.html">Reservations</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <h1>Contact Us</h1>
+
+    <section>
+        <h2>Essential Contact Information</h2>
+        <ul>
+            <li><strong>Address 1:</strong> Near Playa del Carmen-Cozumel Ferry dock, el Centro de Cozumel</li>
+            <li><strong>Address 2:</strong> Near Terminal Puerta Maya, Cozumel</li>
+            <li><strong>Phone:</strong> +52 987 000 0000</li>
+            <li><strong>Email:</strong> info@scootscozumel.com</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Our Locations</h2>
+        <img src="https://maps.googleapis.com/maps/api/staticmap?center=Cozumel,Mexico&zoom=13&size=600x400&markers=color:red%7Clabel:F%7C20.5083,-86.9458&markers=color:blue%7Clabel:T%7C20.4853,-86.9624&key=AIzaSyDzl13UOXmx3dlx9FJmDQmGi7mqcRxeC1U"
+            alt="Map of Cozumel" style="width: 100%; height: auto;">
+    </section>
+
+    <section>
+        <h2>Contact Us</h2>
+        <form id="contact-form">
+            <label for="contact-name">Name:</label>
+            <input type="text" id="contact-name" name="contact-name" required>
+
+            <label for="contact-email">Email:</label>
+            <input type="email" id="contact-email" name="contact-email" required>
+
+            <label for="contact-comment">Comment:</label>
+            <textarea id="contact-comment" name="contact-comment" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+</body>
+
+</html>
